@@ -1,49 +1,31 @@
-### TwinCAT3 ###
-# website: https://www.beckhoff.com/twincat3/
+# Various Altium files
+*.PrjPCBStructure
+*.SchDocPreview
+*.PcbDocPreview
+__Previews
+*.PrjPcbStructure
+*.Dat
+*.REP 
+*.TLT
+*.LOG
+*.log
+*.htm
+*.$$$
 
-# TwinCAT PLC
-*.plcproj.bak
-*.plcproj.orig
-*.tpy
-*.tclrs
-*.library
-*.compiled-library
-*.compileinfo
-*.asm
-*.core
-LineIDs.dbg
-LineIDs.dbg.bak
+#useless dirs
+Project\ Outputs
+Project\ Logs
+Project Outputs for*
 
-# TwinCAT C++ and shared types
-# ignoring the TMC file is only useful for plain PLC programming
-# as soon as shared data types (via tmc), C++ or in general TcCom-Module are used, the TMC file has to be part of the repository
-*.tmc
-*.tmcRefac
+#History
+History
 
-# TwinCAT project files
-*.tsproj.bak
-*.tsproj.b?k
-*.tsproj.orig
-*.xti.bak
-*.xti.bk?
-*.xti.orig
-*.xtv
-*.xtv.bak
-*.xtv.bk?
+#Exports, but not manual ones
+exports/*
+!exports/manual
 
-# Multiuser specific
-**/.TcGit/
-
-# exclude not required folders
-**/_Boot/
-**/_CompileInfo/
-**/_Libraries/
-**/_ModuleInstall/
-**/_Deployment/
-**/_Repository/
-
-# VS Shell project specific files and folders
-**/.vs/
-*.~u
-*.project.~u
-*.suo
+#Python stuff
+scripts/__pycache__/
+*.bak
+*.dwl
+*.dwl2
